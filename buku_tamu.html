@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Membuat Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" >
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark shadow-lg mb">
+        <div class="container">
+          <a class="navbar-brand" href="#">Fiqri Ramadhan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="artikel.html">About Me</a>
+              <a class="nav-link" href="pendidikan.html">Pendidikan</a>
+              <a class="nav-link" href="Jadwal_Kuliah.html">Jadwal Kuliah</a>
+              <a class="nav-linkactive" aria-current="page" href="buku_tamu.html">Buku Tamu</a>
+              <a class="nav-link" href="tugas_javascript.html">Menghitung Luas Persegi Panjang</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<div class="row justify-content-center">
+    <div class="col-md-10">
+    <h2>Form Buku Tamu</h2>
+    <form>
+        Nama Lengkap :<br>
+        <input type="text" name="Nama Lengkap" size="40"><br><br>
+        Jenis Kelamin :<br>
+        <input type="radio" name="Jenis_Kelamin" value="L"> Laki-Laki
+        <input type="radio" name="Jenis_Kelamin" value="P"> Perempuan <br><br>
+        Alamat Tinggal :<br>
+        <input type="text" name="Alamat" size="40"><br><br>
+        Email :<br>
+        <input type="text" name="Email" size="40"><br><br>
+        Aktif Pada Sosial Media :<br>
+        <input type="checkbox" name="Facebook" value="Ya">Facebook
+        <input type="checkbox" name="Twitter" value="Ya">Twitter
+        <input type="checkbox" name="Instagram" value="Ya">Instagram
+        <input type="checkbox" name="Path" value="Ya">Path <br><br>
+        Mengetahui Web Ini Dari :<br>
+        <select name="Info">
+            <option selected="Select">-= Pilih =-</option>
+            <option value="Web">Web</option>
+            <option value="Surat Kabar">Surat Kabar</option>
+            <option value="Teman Kerabat">Teman/Kerabat</option>
+            <option value="Browsing Internet">Browsing Internet</option>
+        </select><br><br>
+        Pesan :<br>
+        <textarea name="Pesan" cols="40"></textarea><br><br>
+        <input type="submit" value="Kirim">
+    </form>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"> </script>
+</body>
+</html>
