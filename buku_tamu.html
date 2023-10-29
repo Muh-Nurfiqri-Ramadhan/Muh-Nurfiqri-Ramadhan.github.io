@@ -26,38 +26,78 @@
           </div>
         </div>
       </nav>
-<div class="row justify-content-center">
-    <div class="col-md-10">
-    <h2>Form Buku Tamu</h2>
-    <form>
-        Nama Lengkap :<br>
-        <input type="text" name="Nama Lengkap" size="40"><br><br>
-        Jenis Kelamin :<br>
-        <input type="radio" name="Jenis_Kelamin" value="L"> Laki-Laki
-        <input type="radio" name="Jenis_Kelamin" value="P"> Perempuan <br><br>
-        Alamat Tinggal :<br>
-        <input type="text" name="Alamat" size="40"><br><br>
-        Email :<br>
-        <input type="text" name="Email" size="40"><br><br>
-        Aktif Pada Sosial Media :<br>
-        <input type="checkbox" name="Facebook" value="Ya">Facebook
-        <input type="checkbox" name="Twitter" value="Ya">Twitter
-        <input type="checkbox" name="Instagram" value="Ya">Instagram
-        <input type="checkbox" name="Path" value="Ya">Path <br><br>
-        Mengetahui Web Ini Dari :<br>
-        <select name="Info">
-            <option selected="Select">-= Pilih =-</option>
-            <option value="Web">Web</option>
-            <option value="Surat Kabar">Surat Kabar</option>
-            <option value="Teman Kerabat">Teman/Kerabat</option>
-            <option value="Browsing Internet">Browsing Internet</option>
-        </select><br><br>
-        Pesan :<br>
-        <textarea name="Pesan" cols="40"></textarea><br><br>
-        <input type="submit" value="Kirim">
-    </form>
+        <div class="container mt-5">
+        <h2>Form Buku Tamu</h2>
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="nama" name="nama" size="40">
+            </div>
+    
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jenisKelamin" id="laki" value="L">
+                    <label class="form-check-label" for="laki">Laki-Laki</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jenisKelamin" id="perempuan" value="P">
+                    <label class="form-check-label" for="perempuan">Perempuan</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="alamat">Alamat Tinggal:</label>
+                <input type="text" class="form-control" id="alamat" name="alamat" size="40">
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" size="40">
+            </div>
+    
+            <div class="form-group">
+                <label>Aktif Pada Sosial Media:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="facebook" value="Ya" id="facebook">
+                    <label class="form-check-label" for="facebook">Facebook</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="twitter" value="Ya" id="twitter">
+                    <label class="form-check-label" for="twitter">Twitter</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="instagram" value="Ya" id="instagram">
+                    <label class="form-check-label" for="instagram">Instagram</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="path" value="Ya" id="path">
+                    <label class="form-check-label" for="path">Path</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="info">Mengetahui Web Ini Dari:</label>
+                <select class="form-control" id="info" name="info">
+                    <option value="Web">Web</option>
+                    <option value="Surat Kabar">Surat Kabar</option>
+                    <option value="Teman/Kerabat">Teman/Kerabat</option>
+                    <option value="Browsing Internet">Browsing Internet</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea class="form-control" id="pesan" name="pesan" rows="5" cols="40"></textarea>
+            </div>
+    
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
     </div>
-</div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"> </script>
 </body>
 </html>
